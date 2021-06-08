@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&quot;Coding Period&colon; Week 4&quot;</title>
+        <link rel="stylesheet" href="./blogs.css">
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="coding-period-week-4">&quot;Coding Period: Week 4&quot;</h1>
+<blockquote>
+<p>&quot;Worked on new tab in bottom Navigation &amp; Scraped CDM of New york&quot;</p>
+</blockquote>
+<ul>
+<li>toc: false</li>
+<li>branch: master</li>
+<li>badges: true</li>
+<li>comments: true</li>
+<li>hide: false</li>
+<li>search_exclude: true</li>
+</ul>
+<h2 id="working-on-download-cdm-tab-in-bottom-navigation">Working on Download CDM Tab in Bottom Navigation</h2>
+<p>Created a new tab in bottom Navigation which will display all the hospitals in current state of user. I have used GitLab Repository API.</p>
+<h3 id="small-problem">Small Problem</h3>
+<p>I have faced small problem while fetching data from API, I can get maximum of 100 Hospitals data by calling API, which is the limitation of GitLab API.</p>
+<h3 id="solution">Solution</h3>
+<p>So, I have to call API as many times in App till all hospitals data is fetched, I am fetching total number of pages in first call then calling API as many times the total number of pages &amp; getting data of 100 hospitals each time.</p>
+<h3 id="screen-ui">Screen UI</h3>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/download_cdm.jpeg?raw=true" alt="download_cdm"></p>
+<h3 id="saving-cdm-to-sql-database">Saving CDM to SQL Database</h3>
+<p>I will download csv of each file from GitLab API, I will save it SQL Database in App, Currently I am working on this feature, I have to manage a lot of states in App, I am using BLoC Architecture to do this, I have made DAO [ Data Access Object ] file for it , to do this in cleaner way.</p>
+<h3 id="displaying-cdm">Displaying CDM</h3>
+<p>When user will click on download button of any list item, View button will appear, I am working on this &amp; will display CDM as list on new Screen, I will complete this by Sunday.</p>
+<h2 id="scraping-cdm-of-new-york-state">Scraping CDM of New York State</h2>
+<p>Currently, I am working on this, I have to make spider file for it which will get data from New York State Health Department, I have done making process script which will parse data to proper column names.
+This Data is provided by OSHPD New York Department.</p>
+<h2 id="what-do-i-plan-to-do-next-week">What do I plan to do next week?</h2>
+<ol>
+<li>
+<p>Working on Search Screen &amp; Saved screen backend</p>
+</li>
+<li>
+<p>Scraping CDM of California State</p>
+</li>
+</ol>
+<pre><code class="language-python"><div>
+</div></code></pre>
+
+    </body>
+    </html>

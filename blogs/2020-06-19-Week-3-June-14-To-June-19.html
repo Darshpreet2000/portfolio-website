@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&quot;Coding Period&colon; Week 3&quot;</title>
+      
+        <link rel="stylesheet" href="./blogs.css">
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="coding-period-week-3">&quot;Coding Period: Week 3&quot;</h1>
+<blockquote>
+<p>&quot;Working on Home Screen backend with BLoC Architecture&quot;</p>
+</blockquote>
+<ul>
+<li>toc: false</li>
+<li>branch: master</li>
+<li>badges: true</li>
+<li>comments: true</li>
+<li>hide: false</li>
+<li>search_exclude: true</li>
+</ul>
+<p>This week I learned BLoC Architecture in Flutter, I understood it quickly from YouTube videos. I started implementing it in App.</p>
+<p>I will try to explain first what BLOC components should do as short as possible (and as trivial as possible).</p>
+<ul>
+<li>
+<p>UI screen - obviously shows data to the user</p>
+</li>
+<li>
+<p>BLOC (or the ViewModel) - decides HOW to display data to the user, do we make the text bold, do we show the error, do we go to next screen.</p>
+</li>
+<li>
+<p>Repo - decides WHAT data to display to the user (do we show the content from db, do we fetch it from API)</p>
+</li>
+</ul>
+<h3 id="working-on-home-screen-backend">Working on Home Screen Backend</h3>
+<p>I have created BLoC for home screen &amp; location services, I have done the following tasks in Home screen</p>
+<ol>
+<li>
+<p>Fetched &amp; Displayed User Location using Geolocator Package
+App will ask for location permission &amp; will access location of user, I have used two packages</p>
+<ul>
+<li>
+<p>location - For asking GPS Permission</p>
+</li>
+<li>
+<p>GeoLocator - For Getting coordinates of user location</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Fetched Nearby Hospitals using Overpass API</p>
+<ul>
+<li>
+<p>Used Overpass API for Getting Nearby Hospitals, I have to pass Location Coordinates &amp; radius to get hospitals around my          Location</p>
+</li>
+<li>
+<p>Then I Parsed JSoN data recieved to list of objects</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Fetching Image of each hospital from Google</p>
+<ul>
+<li>For fetching images, I have Used FutureBuilder Widget in flutter which executes a function which searches on Google by          Hospital name &amp; fetches the HTML Response, Then I get the link of first image &amp; pass it to another widget Cached Netwrok        Image which loads the image.</li>
+</ul>
+</li>
+<li>
+<p>Using Shimmer Loading Effect to load list</p>
+<ul>
+<li>I have use flutter shimmer package for doing this, I have created a ListTile for this, While the data is Loading I display      this.</li>
+</ul>
+</li>
+</ol>
+<h3 id="gif-of-home-screen">GIF of Home Screen</h3>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/home_demo.gif?raw=true" alt="Home Demo"></p>
+<h3 id="sql-database-class">SQL Database Class</h3>
+<p>Completed Main functionality of SQL Database class</p>
+<ul>
+<li>Implemented Basic Insertion in SQL Database using Flutter <strong>sqflite</strong> package, Some Other function are remaining which I will complete in upcoming weeks</li>
+</ul>
+<h3 id="working-on-web-crawler">Working on Web Crawler</h3>
+<p>Scraped CDM of Indiana State</p>
+<ul>
+<li>I have Used Data Provided by Indiana State, It contains discharge data of Hospitals of 2018, I have scraped data using scrapy, processed data to proper column names using python.</li>
+</ul>
+<h3 id="what-do-i-plan-to-do-next-week">What do I plan to do next week</h3>
+<ol>
+<li>
+<p>I have used shared pref to store some data, I will replace it with Hive</p>
+</li>
+<li>
+<p>I will use sqflite to store CDM</p>
+</li>
+<li>
+<p>Working on Main Feature of this App [ Compare Prices Screen]</p>
+</li>
+<li>
+<p>Scraping CDM of New York State</p>
+</li>
+</ol>
+
+    </body>
+    </html>

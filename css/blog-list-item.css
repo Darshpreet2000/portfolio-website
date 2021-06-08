@@ -1,0 +1,40 @@
+.post-list> li .post-meta-description {     color: #585858;  font-size: 16px; margin: 4px;   }
+
+
+/** Basic styling */
+body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif; color: #111111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
+.post-list > li{  border-radius: 16px;
+
+  padding: 12px;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.post-list > li:hover {
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/** Links */
+a { color: #2a7ae2; text-decoration: none; }
+
+a:visited { color: #1756a9; }
+
+a:hover { color: #111111; text-decoration: underline; }
+
+/** Code formatting */
+
+.post-list-heading { font-size: 1.75rem; }
+
+.post-list { margin-left: 0; list-style: none;   padding: 16px;
+   }
+
+.post-list > li { margin-bottom: 30px; }
+
+.post-meta { font-size: 14px; color: #828282; }
+
+.post-link { display: block; font-size: 1.5rem; }
+
+.post-meta{ 
+  margin: 4px;
+  font-weight: 600;
+}

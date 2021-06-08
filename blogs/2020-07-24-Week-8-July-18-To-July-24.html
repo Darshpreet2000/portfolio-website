@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&quot;Coding Period&colon; Week 8&quot;</title>
+      
+        <link rel="stylesheet" href="./blogs.css">
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="coding-period-week-8">&quot;Coding Period: Week 8&quot;</h1>
+<blockquote>
+<p>&quot;Scraping Medicare data, Making UI of compare hospital&quot;</p>
+</blockquote>
+<ul>
+<li>
+<p>toc: false</p>
+</li>
+<li>
+<p>branch: master</p>
+</li>
+<li>
+<p>badges: true</p>
+</li>
+<li>
+<p>comments: true</p>
+</li>
+<li>
+<p>hide: false</p>
+</li>
+<li>
+<p>search_exclude: true</p>
+</li>
+</ul>
+<h3 id="completing-view-cdm-statewise-screen">Completing View CDM Statewise Screen</h3>
+<p>This screen displays all data from the scraper, I have used GitLab API to get data from Gitlab Repository, User can download CDM from other states also &amp; app can work Offline after CDM are saved to SQL Database</p>
+<p>I have created separate BLoC for this screen but for displaying list of hospitals I am using &quot;download cdm screen&quot; &amp; &quot;view cdm screen&quot;.</p>
+<h4 id="screenshots">ScreenShots</h4>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/view_cdm_state.jpeg?raw=true" alt="download_cdm"></p>
+<h3 id="made-ui-of-compare-hospital-screen">Made UI of Compare Hospital Screen</h3>
+<p>I have only made UI of Compare Hospital Screen, I will complete its backend work by next week, I will get data from medicare hospital compare data, I will use socrata API to get data in app</p>
+<p><a href="https://www.medicare.gov/hospitalcompare/search.html">https://www.medicare.gov/hospitalcompare/search.html</a></p>
+<p>This is Medicare Hospital Compare Website, It uses data from</p>
+<p><a href="https://data.medicare.gov/data/hospital-compare">https://data.medicare.gov/data/hospital-compare</a> <a href="http://data.medicare.gov">data.medicare.gov</a></p>
+<h4 id="screenshots-of-ui">ScreenShots of UI</h4>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/compare_hospital_ui.jpeg?raw=true" alt="download_cdm"></p>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/compare_hospital.jpeg?raw=true" alt="download_cdm"></p>
+<h3 id="scraped--processed-medicare-data">Scraped &amp; processed Medicare Data</h3>
+<p>I made scrapy spider to scrap data from CMS Data of</p>
+<p>Inpatient Data of 3000 Hospitals</p>
+<p><a href="https://data.cms.gov/Medicare-Inpatient/Inpatient-Prospective-Payment-System-IPPS-Provider/tcsp-6e99">https://data.cms.gov/Medicare-Inpatient/Inpatient-Prospective-Payment-System-IPPS-Provider/tcsp-6e99</a></p>
+<p>Outpatient Data of Hospitals</p>
+<p><a href="https://data.cms.gov/Medicare-Outpatient/Provider-Outpatient-Hospital-Charge-Data-by-APC-CY/fmbt-qrrw">https://data.cms.gov/Medicare-Outpatient/Provider-Outpatient-Hospital-Charge-Data-by-APC-CY/fmbt-qrrw</a></p>
+<p>I also made process script which processes CDM to proper columns &amp; also seperates each hospital &amp; places to its state folder by its state Code</p>
+<h2 id="what-do-i-plan-to-do-next-week">What do I plan to do next week?</h2>
+<ol>
+<li>
+<p>Completing compare hospitals screen</p>
+</li>
+<li>
+<p>Adding search functionality in view cdm screen</p>
+</li>
+<li>
+<p>Discussing with mentors for GUI of scraper</p>
+</li>
+</ol>
+
+    </body>
+    </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&quot;Coding Period&colon; Week 7&quot;</title>
+        <link rel="stylesheet" href="./blogs.css">
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="coding-period-week-7">&quot;Coding Period: Week 7&quot;</h1>
+<blockquote>
+<p>&quot;Processed CDM of Caliornia,Showed Progress while downloading CDM&quot;</p>
+</blockquote>
+<ul>
+<li>toc: false</li>
+<li>branch: master</li>
+<li>badges: true</li>
+<li>comments: true</li>
+<li>hide: false</li>
+<li>search_exclude: true</li>
+</ul>
+<h2 id="showing-progress-indicator-while-downloading-cdm">Showing Progress Indicator while downloading CDM</h2>
+<p>The progress indicator shows percent 0-60 for downloading CDM, Rest of 60-100 percent are used for inserting downloaded large CSV to
+SQL Database in App</p>
+<p>This task was really challenging for me, it involves a lot of state change &amp; also I first have to get original file size using GitLab API.</p>
+<p>I have used BLoC Architecture properly for handling states of progress indicator.</p>
+<p>Color of progress indicator change from red-orange-green.</p>
+<h3 id="screenshots">ScreenShots</h3>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/progressLow.jpeg?raw=true" alt="download_cdm"></p>
+<p><img src="https://github.com/Darshpreet2000/My-Blog/blob/master/images/progressHigh.jpeg?raw=true" alt="download_cdm"></p>
+<h2 id="working-on-gitlab-ci-pipeline">Working on Gitlab CI Pipeline</h2>
+<p>I was able to successfully install chromedriver &amp; chromebrowser on Linux CI, but it was not working earlier because there was no display in CI terminal for bowser to display, I was getting an excaption, After searching a lot on StackOverFlow , I found a solution to use pyvirtualdisplay &amp; now it is working correctly.</p>
+<p>The CI Pipeline Scraps CDM &amp; make a &quot;Data&quot; directory which contains CDM &amp; after running &quot;<a href="http://process.py">process.py</a>&quot; it makes &quot;CDM&quot; directory which contains CDM in proper columns.</p>
+<h2 id="making-process-scripts-for-california-hospitals">Making Process Scripts for California Hospitals</h2>
+<p>There are around 370 hospitals in california, Till now I have completed process script of around 250 Hospitals, for rest work I will surely complete by tomorrow.</p>
+<p>This task is very time consuming &amp; also boring, I have to check column names, rows to skip in each CDM.</p>
+<p>I will create its MR by tomorrow.</p>
+<h2 id="view-cdm-statewise-screen">View CDM Statewise Screen</h2>
+<p>This task is pending from last week, I will complete it in this weekend , I just have to get available states using Gitlab API, &amp; then show the data in list view, Opening each state will work as &quot;View CDM Screen&quot; which is already created.
+So, this will done by tomorrow.</p>
+<h2 id="what-do-i-plan-to-do-next-week">What do I plan to do next week?</h2>
+<h3 id="for-web-scraper">For Web Scraper</h3>
+<p>1.Scraping &amp; making process script for following data.</p>
+<p>Inpatient Data of 3000 Hospitals</p>
+<p><a href="https://data.cms.gov/Medicare-Inpatient/Inpatient-Prospective-Payment-System-IPPS-Provider/tcsp-6e99">https://data.cms.gov/Medicare-Inpatient/Inpatient-Prospective-Payment-System-IPPS-Provider/tcsp-6e99</a></p>
+<p>Outpatient Data of Hospitals</p>
+<p><a href="https://data.cms.gov/Medicare-Outpatient/Provider-Outpatient-Hospital-Charge-Data-by-APC-CY/fmbt-qrrw">https://data.cms.gov/Medicare-Outpatient/Provider-Outpatient-Hospital-Charge-Data-by-APC-CY/fmbt-qrrw</a></p>
+<h3 id="for-app">For App</h3>
+<p>1.Completing view CDM Statewise screen.</p>
+<p>2.Working on Compare Hospitals Functionality of App</p>
+<pre><code class="language-python"><div>
+</div></code></pre>
+
+    </body>
+    </html>
