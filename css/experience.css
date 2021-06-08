@@ -27,7 +27,7 @@ body{
     
 }
 .img {  max-width:100%; height:auto; }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .left-side-view{
         display: none;
      }
