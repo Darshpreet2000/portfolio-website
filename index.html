@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/left-side.css">
     <link rel="stylesheet" href="css/blog-list-item.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="index.js"></script>
     <script src="js/nav-bar.js"></script>
    <script src="js/index.js"> </script>
@@ -18,19 +17,69 @@
 <body>
     <div class="App">
         <div class="left-side-view">
-            <div id="left-side">
-    
+                <div class="left-side">
+                    <div class="name"> Darshpreet Singh </div>
+                    <div class="bottom-view">
+                           <div class="profile-image">
+                           <img id="avatar" src="assets/profile.png" alt="logo" />
+                           </div> 
+                           <div id="profile-info-name">
+                          Darshpreet Singh  
+                           </div>
+                           <div id="profile-info">
+                           GSoC'20, '21 @LibreHealth  
+                          </div>
+                          <div id="profile-info">
+                          Mobile App Developer (Flutter)            
+                          </div>
+                          <div id="profile-info">
+                         Computer Science Engineer           
+                          </div> 
+                    </div>
+               
             </div>
         </div>    
         <div class="right-side-view">
             <div id="nav-bar" style="height: 60px;">
+                <nav class="nav-bar">
+   
+                    <div id="name-text">Darshpreet Singh</div>
+                    <div class="nav-menu" onclick="handleClick()">
+                      <i class="fa fa-bars" style="color: white;"></i>
+                    </div>  
+                  
+               
+               <ul id="nav-bar-list" class="nav-items">
+               <div class="nav-close-menu-orange" onclick="handleClick()">
+                   <i class="fa fa-times"></i>
+                 </div>
+                 <a href="index.html"  class="list-item">
+                   
+                   Home 
+                  </a>
+                   <a href="projects.html" class="list-item">
+                   
+                    Projects
+                    
+                   </a>
+                   <a href="experience.html"  class="list-item">
+                   
+                     Experience  
+                  </a>
+                  <a href="assets/darshpreet_singh_resume.pdf" target="_blank" class="list-item">
+                     
+                      Resume 
+                     
+                   </a>
+                 </ul>
+               </nav>
             </div> 
             <div class="view-mode">
                 <div id="blog">
-              
+                  
                     <ul class="post-list">     
                          <h2>Recent Blogs</h3>
-                        
+                     
                         <li>
                          <a class="post-link" target="_blank" href="blogs/2020-09-01-GSoC-Wrap-Up.html">
                         GSoC Journey Ended Only, Not The Open Source
